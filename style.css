@@ -1,0 +1,65 @@
+*{box-sizing: border-box;}
+body{margin:0;padding:0;}
+.container{display:grid;
+grid-template-columns: 1fr 4fr;
+
+}
+
+.sidebar{background-color:rgb(108, 93, 236);
+          grid-area:1/1/4/2;
+        text-align: center;
+        color:antiquewhite;
+        
+       
+    }
+.sidebar ul{list-style-type:none;display:flex;
+    flex-direction: column;
+    margin-left:0;padding:0;
+gap:20px;}
+
+
+
+
+.header{display:grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+padding:5px;}
+
+.controlpanel{background-color: rgb(165, 170, 170);
+    padding:10px;
+    display:grid;
+grid-template-columns: 2fr 1fr;
+grid-template-rows:1fr;
+
+}
+
+.projectpanel{display:grid;
+    grid-template-columns: 3fr 1fr;
+        gap:5px;
+grid-template-columns: repeat(auto-fit,minmax(200px, 1fr));}
+
+
+.projectpanel .card{background-color:white;
+    border-left:rgb(205, 219, 0) 4px solid;
+    padding:10px;
+   border-radius:5%;
+font-size:1em;
+
+
+}
+
+.intecontent{display:flex;}
+
+.announcements{grid-area:1/2/1/2;display:grid;
+grid-template-rows: repeat(8,1fr);
+margin:0;
+font-size:0.5em;}
+
+.announcements .card{background-color:white;
+    border-left:yellow 4px solid;
+    padding:10px;border-radius:5%;}
+
+.trending{grid-area: 2/2/2/2;gap:20px;}
+
+.trending .card{background-color:white;border-left:yellow 4px solid;
+    padding:10px;border-radius:5%;}
